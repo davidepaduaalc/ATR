@@ -154,7 +154,7 @@ bool walk(pos_t pos)
 int main(int argc, char* argv[])
 {
 	// carregar o labirinto com o nome do arquivo recebido como argumento (argv[])
-	pos_t initial_pos = load_maze("C:\\Users\\davi_\\OneDrive\\Documentos\\POO\\ATR\\aula1\\maze2.txt");
+	pos_t initial_pos = load_maze(argv[]);
 	bool exit_found = walk(initial_pos);
 	if(exit_found){
 		printf("Labirinto completo, Saida achada!!");
